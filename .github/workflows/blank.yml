@@ -1,0 +1,24 @@
+on: pull_request
+
+jobs:
+  test_a:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          echo "a"
+          sleep 1
+  test_b:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          echo "b"
+          sleep 1
+  test_c:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          echo "c"
+          sleep 1
